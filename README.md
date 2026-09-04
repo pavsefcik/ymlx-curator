@@ -12,16 +12,14 @@ The curated LLM list for [ymlx](https://github.com/pavsefcik/ymlx) — a standal
 
 ## File format
 
-Blank-line-separated 3-line blocks under a tier header. The first line is the display name, the second is the HuggingFace id used for downloading, and the third is the tag list shown in the menu.
+Blank-line-separated 2-line blocks under a tier header. The first line is the HuggingFace id used for downloading, and the second is the tag list shown in the menu.
 
 ```
 8 GB RAM Tier Models
 
-Qwen 3.5 4B
 mlx-community/Qwen3.5-4B-MLX-4bit
 vision, reasoning
 
-Gemma 4 E4B
 mlx-community/gemma-4-e4b-it-4bit
 vision, audio
 
@@ -35,4 +33,4 @@ Tier headers are any line matching `GB RAM` (e.g. `if 16 GB RAM:`). See the ymlx
 
 ## Contributing
 
-To add, remove, or re-tag a model, edit [ymlx-curator.md](ymlx-curator.md) and open a pull request. Keep the 3-line block format intact.
+To add, remove, or re-tag a model, edit [ymlx-curator.md](ymlx-curator.md) and open a pull request. Keep the 2-line block format intact.
