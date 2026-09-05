@@ -6,6 +6,9 @@ vision, reasoning
 mlx-community/gemma-4-e4b-it-4bit
 vision, audio
 
+LiquidAI/LFM2.5-2.6B-MLX-4bit
+reasoning
+
 
 16 GB RAM Tier Models
 
@@ -14,6 +17,9 @@ vision, reasoning
 
 mlx-community/gemma-4-12B-it-qat-4bit
 vision, reasoning, audio
+
+LiquidAI/LFM2.5-8B-A1B-MLX-4bit
+reasoning, MoE
 
 
 24 GB RAM Tier Models
