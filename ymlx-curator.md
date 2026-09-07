@@ -18,6 +18,9 @@ tools, thinking
 mlx-community/Qwen3.5-9B-MLX-4bit
 vision, tools, thinking
 
+keXjos/Qwen3.8-9B-mlx-4Bit
+vision, tools, thinking
+
 mlx-community/gemma-4-12B-it-qat-4bit
 vision, tools, thinking, audio
 
