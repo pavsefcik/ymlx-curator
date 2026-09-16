@@ -27,6 +27,9 @@ text, tools, thinking, vision
 keXjos/Qwen3.8-9B-mlx-4Bit
 text, tools, thinking, vision
 
+keXjos/Qwen3.8-27B-mlx-2Bit
+text, tools, thinking, vision
+
 mlx-community/gemma-4-12B-it-qat-4bit
 text, tools, thinking, vision, audio
 
