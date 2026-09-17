@@ -12,7 +12,7 @@ text, tools, vision
 mlx-community/Ministral-3-3B-Reasoning-2512-4bit
 text, tools, thinking, vision
 
-mlx-community/LFM2.5-8B-A1B-MLX-4bit
+mlx-community/LFM2.5-2.6B-4bit
 text, tools, thinking
 
 prism-ml/Ternary-Bonsai-8B-mlx-2bit
@@ -42,7 +42,7 @@ text, tools, thinking, vision
 mlx-community/Ministral-3-14B-Instruct-2512-4bit
 text, tools, vision
 
-mlx-community/Ministral-3-14B-Instruct-2512-4bit
+mlx-community/Ministral-3-14B-Reasoning-2512-4bit
 text, tools, thinking, vision
 
 mlx-community/LFM2.5-8B-A1B-MLX-4bit
