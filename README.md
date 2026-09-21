@@ -12,16 +12,22 @@ The curated LLM list for [ymlx](https://github.com/pavsefcik/ymlx) — a standal
 
 ## File format
 
-Blank-line-separated 2-line blocks under a tier header. The first line is the HuggingFace id used for downloading, and the second is the tag list shown in the menu.
+Blank-line-separated 3-line blocks under a tier header:
+
+1. **Title** — the friendly name shown in ymlx's **Download new model** menu. Start it with the model's country flag (e.g. 🇨🇳, 🇺🇸, 🇫🇷).
+2. **Model id(s)** — the HuggingFace id used for downloading.
+3. **Tags** — the tag list shown after the title (e.g. `t3, vision`).
 
 ```
 8 GB RAM Tier Models
 
+🇨🇳 Alibaba Qwen 3.5 4B
 mlx-community/Qwen3.5-4B-MLX-4bit
-vision, reasoning
+t3, vision
 
+🇺🇸 Google Gemma 4 E4B
 mlx-community/gemma-4-e4b-it-4bit
-vision, audio
+t3, vision, audio
 
 
 16 GB RAM Tier Models
@@ -31,6 +37,24 @@ vision, audio
 
 Tier headers are any line matching `GB RAM` (e.g. `if 16 GB RAM:`). See the ymlx README for how tiers map to RAM (≤ 8 GB, 16 / 18 GB, ≥ 24 GB).
 
+### Multi-model entries (the Ministral exception)
+
+Ministral ships as **two separate models** — an *Instruct* and a *Reasoning* half. List both ids on the model line separated by ` & `:
+
+```
+🇫🇷 Mistral Ministral 3 8B
+mlx-community/Ministral-3-8B-Instruct-2512-4bit & mlx-community/Ministral-3-8B-Reasoning-2512-4bit
+t3, vision
+```
+
+When the model line contains ` & `, ymlx treats this specially:
+
+- **Download** fetches both ids.
+- The **downloaded-models menu** shows a single entry (`Ministral-3-8B-4bit`), not the two ids.
+- **Toggle thinking** (tab) swaps between the Instruct and Reasoning halves — only one is ever loaded at a time.
+
+Only Ministral-style pairs should use ` & `; ordinary single-model entries keep one id on line 2.
+
 ## Contributing
 
-To add, remove, or re-tag a model, edit [ymlx-curator.md](ymlx-curator.md) and open a pull request. Keep the 2-line block format intact.
+To add, remove, or retitle a model, edit [ymlx-curator.md](ymlx-curator.md) and open a pull request. Keep the 3-line block format intact, and use ` & ` only for the Ministral Instruct/Reasoning pair.

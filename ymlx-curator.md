@@ -27,6 +27,10 @@ t3, vision, audio
 mlx-community/Ministral-3-8B-Instruct-2512-4bit & mlx-community/Ministral-3-8B-Reasoning-2512-4bit
 t3, vision
 
+🏁 Ternary Bonsai 2 27B
+prism-ml/Ternary-Bonsai-2-27B-mlx-2bit
+t3
+
 
 32 GB RAM Tier Models
 
